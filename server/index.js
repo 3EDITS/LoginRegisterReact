@@ -11,13 +11,13 @@ const db = mysql.createConnection({
   user: "root",
   host: "localhost",
   password: "",
-  database: "taekwondo_acc",
+  database: "database", // Your database name ชื่อฐานข้อมูลของคุณ
 });
 
 app.post("/register", (req, res) => {
-  const checkusername = "SELECT * FROM taekwondo_acc WHERE username = ?";
+  const checkusername = "SELECT * FROM database WHERE username = ?";
   const sql =
-    "INSERT INTO taekwondo_acc (`username`, `email`, `password`) VALUES (?,?,?)";
+    "INSERT INTO database (`username`, `email`, `password`) VALUES (?,?,?)";
 
   const username = req.body.username;
   const email = req.body.email;
@@ -49,7 +49,7 @@ app.post("/register", (req, res) => {
 
 app.post("/login", (req, res) => {
   const loginSQL =
-    "SELECT * FROM taekwondo_acc WHERE username = ?";
+    "SELECT * FROM database WHERE username = ?";
   const username = req.body.username;
   const password = req.body.password;
 
