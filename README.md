@@ -13,7 +13,7 @@
 ## วิธีโคลนโปรเจค
 
 ```bash
-git clone https://github.com/yourusername/loginRegisterReact.git](https://github.com/3EDITS/LoginRegisterReact.git
+git clone https://github.com/3EDITS/LoginRegisterReact.git
 ```
 
 ## การเริ่มต้นใช้งาน
